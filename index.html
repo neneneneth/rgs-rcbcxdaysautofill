@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xdays Auto Fill</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>RCBC Xdays Auto Fill</h1>
+    
+    <p id="file-name" style="margin-top: -10px; font-size: 14px; color: #555;"></p>
+    
+    <div class="button-group">
+  <label for="excel-file" class="upload-label custom-button green-button">Upload Excel File</label>
+  <input type="file" id="excel-file" accept=".xlsx, .xls" style="display: none;" />
+  
+  <button id="download-template" class="custom-button">Download Template</button>
+</div>
+
+  <div id="table-container"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
