@@ -1,0 +1,123 @@
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #1d3557;
+}
+
+#file-name {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.custom-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+}
+.green-button {
+  background-color: #28a745;
+}
+
+.green-button:hover {
+  background-color: #218838;
+}
+
+
+#table-container {
+  max-height: 75vh;
+  overflow: auto;
+  border: 1px solid #ccc;
+  background-color: white;
+  position: relative;
+  margin-top: 20px;
+}
+
+
+table {
+  min-width: 1000px; 
+  border-collapse: collapse;
+  font-size: 13px;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+
+th {
+  position: sticky;
+  top: 0;
+  background-color: #f1f1f1;
+  font-weight: 600;
+  z-index: 1;
+  padding: 4px 8px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+
+td {
+  padding: 4px 8px;
+  line-height: 1.2;
+  border: 1px solid #ddd;
+  text-align: left;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+tr {
+  height: 28px;
+}
+
+
+.highlight-header {
+  background-color: #ffeeba !important;
+}
+
+
+.table-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-weight: 500;
+}
+
+.table-button:hover {
+  background-color: #0056b3;
+}
