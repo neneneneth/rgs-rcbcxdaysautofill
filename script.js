@@ -29,10 +29,16 @@ document.getElementById("excel-file").addEventListener("change", function (e) {
     e.target.value = "";
     return;
   }
-
+  
   const jsonData = XLSX.utils.sheet_to_json(worksheet, { defval: "" });
   displayTable(jsonData);
-
+  
+  if (jsonData.length === 0) {
+    alert("⚠️ The Excel file has headers only and no data rows.");
+    e.target.value = "";
+    return;
+  }
+  
   e.target.value = "";
 };
   reader.readAsArrayBuffer(file);
